@@ -36,29 +36,6 @@ public class Item {
 
     protected void doUpdateItem() {
         switch (name) {
-            case "Backstage passes to a TAFKAL80ETC concert":
-                if (quality < 50) {
-                    quality = quality + 1;
-
-                    if (sellIn < 11) {
-                        if (quality < 50) {
-                            quality = quality + 1;
-                        }
-                    }
-
-                    if (sellIn < 6) {
-                        if (quality < 50) {
-                            quality = quality + 1;
-                        }
-                    }
-                }
-
-                sellIn = sellIn - 1;
-
-                if (sellIn < 0) {
-                    quality = quality - quality;
-                }
-                break;
             case "Sulfuras, Hand of Ragnaros":
 
                 break;
