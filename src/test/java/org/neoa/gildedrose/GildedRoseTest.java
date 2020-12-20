@@ -1,17 +1,16 @@
 package org.neoa.gildedrose;
 
-import org.approvaltests.Approvals;
+import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.jupiter.api.Test;
 
 public class GildedRoseTest {
 
     @Test
     void foo() {
-        String name = "foo";
-        int sellIn = 0;
-        int quality = 0;
-        String response = updateItem(name, sellIn, quality);
-        Approvals.verify(response);
+        CombinationApprovals.verifyAllCombinations(this::updateItem,
+                new String []{"foo"},
+                new Integer []{0},
+                new Integer []{0});
     }
 
     private String updateItem(String name, int sellIn, int quality) {
