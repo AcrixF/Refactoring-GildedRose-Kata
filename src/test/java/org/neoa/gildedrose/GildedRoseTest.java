@@ -9,7 +9,7 @@ public class GildedRoseTest {
     void foo() {
         CombinationApprovals.verifyAllCombinations(this::updateItem,
                 new String []{"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"},
-                new Integer []{-1, 0, 11},
+                new Integer []{-1, 0, 11, 15},
                 new Integer []{0, 5, 49, 50});
     }
 
