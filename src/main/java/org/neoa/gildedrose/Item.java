@@ -35,23 +35,16 @@ public class Item {
 
 
     protected void doUpdateItem() {
-        switch (name) {
-            case "Sulfuras, Hand of Ragnaros":
+        if (quality > 0) {
+            quality = quality - 1;
+        }
 
-                break;
-            default:
-                if (quality > 0) {
-                    quality = quality - 1;
-                }
+        sellIn = sellIn - 1;
 
-                sellIn = sellIn - 1;
-
-                if (sellIn < 0) {
-                    if (quality > 0) {
-                        quality = quality - 1;
-                    }
-                }
-                break;
+        if (sellIn < 0) {
+            if (quality > 0) {
+                quality = quality - 1;
+            }
         }
     }
 }
