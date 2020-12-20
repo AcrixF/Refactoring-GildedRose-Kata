@@ -15,6 +15,14 @@ public class GildedRose {
     }
 
     private void doUpdateItem(Item item) {
+        if (item.name.equals("Aged Brie")) {
+            foo(item);
+        } else {
+            foo(item);
+        }
+    }
+
+    private void foo(Item item) {
         if (!item.name.equals("Aged Brie")
                 && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
             if (item.quality > 0) {
