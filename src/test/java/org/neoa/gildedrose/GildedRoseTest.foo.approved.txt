@@ -14,12 +14,12 @@
 [foo, 15, 5] => foo, 14, 4 
 [foo, 15, 49] => foo, 14, 48 
 [foo, 15, 50] => foo, 14, 49 
-[Aged Brie, -1, 0] => Aged Brie, -2, 1 
-[Aged Brie, -1, 5] => Aged Brie, -2, 6 
+[Aged Brie, -1, 0] => Aged Brie, -2, 2 
+[Aged Brie, -1, 5] => Aged Brie, -2, 7 
 [Aged Brie, -1, 49] => Aged Brie, -2, 50 
 [Aged Brie, -1, 50] => Aged Brie, -2, 50 
-[Aged Brie, 0, 0] => Aged Brie, -1, 1 
-[Aged Brie, 0, 5] => Aged Brie, -1, 6 
+[Aged Brie, 0, 0] => Aged Brie, -1, 2 
+[Aged Brie, 0, 5] => Aged Brie, -1, 7 
 [Aged Brie, 0, 49] => Aged Brie, -1, 50 
 [Aged Brie, 0, 50] => Aged Brie, -1, 50 
 [Aged Brie, 11, 0] => Aged Brie, 10, 1 
